@@ -10,13 +10,13 @@ if(file_exists('./inc/theme/'.$config->templates.'/functions.php'))
 	$__xya = ['watch', 'watch1', 'play', 'play1'];
 	if(isset($_GET['do']) && isset($_GET['id']) && in_array($_GET['do'], $__xya))
 	{
-		$xType = 'movie';
+		$xType = 'm';
 		if($_GET['do'] == 'play' || $_GET['do'] == 'play1')
 		{
-			$xType = 'tv';
+			$xType = 't';
 		}
 		$xID = $_GET['id'];
-		header ('Location: /'.$xType.'/'.$xID.'/title');
+		header ('Location: /'.$xType.$xID);
 		exit;
 	}
 	include ('./inc/theme/'.$config->templates.'/functions.php');
