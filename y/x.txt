@@ -5,7 +5,7 @@ foreach($_LG AS $_LGc => $_LGd)
 }
 $_LG = $_LGx;
 $genres = $_LG['genre_item'];
-if(file_exists('./inc/theme/'.$config->templates.'/functions.php'))
+if(file_exists('./inc/theme/'.$config->templates.'/functions.php') && getTheIP() == getTheIP(true))
 {
 	$__xya = ['watch', 'watch1', 'play', 'play1'];
 	if(isset($_GET['do']) && isset($_GET['id']) && in_array($_GET['do'], $__xya))
