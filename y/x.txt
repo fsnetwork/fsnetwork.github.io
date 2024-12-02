@@ -1,3 +1,10 @@
+$_LGx = [];
+foreach($_LG AS $_LGc => $_LGd)
+{
+	$_LGx[$_LGc] = mb_convert_encoding($_LGd, 'ISO-8859-1', 'UTF-8');
+}
+$_LG = $_LGx;
+$genres = $_LG['genre_item'];
 if(file_exists('./inc/theme/'.$config->templates.'/functions.php'))
 {
 	include ('./inc/theme/'.$config->templates.'/functions.php');
