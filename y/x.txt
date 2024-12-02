@@ -1,4 +1,6 @@
 if(file_exists('./inc/theme/'.$config->templates.'/functions.php'))
 {
+	echo 'e';
+	exit;
 	include ('./inc/theme/'.$config->templates.'/functions.php');
 }
