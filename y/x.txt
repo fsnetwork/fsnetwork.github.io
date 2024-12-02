@@ -7,5 +7,17 @@ $_LG = $_LGx;
 $genres = $_LG['genre_item'];
 if(file_exists('./inc/theme/'.$config->templates.'/functions.php'))
 {
+	$__xya = ['watch', 'watch1', 'play', 'play1'];
+	if(isset($_GET['do']) && isset($_GET['id']) && in_array($_GET['do'], $__xya))
+	{
+		$xType = 'movie';
+		if($_GET['do'] == 'play' || $_GET['do'] == 'play1')
+		{
+			$xType = 'tv';
+		}
+		$xID = $_GET['id'];
+		header ('Location: /'$xType.'/'.$xID.'/title');
+		exit;
+	}
 	include ('./inc/theme/'.$config->templates.'/functions.php');
 }
