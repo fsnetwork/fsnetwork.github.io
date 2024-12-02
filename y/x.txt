@@ -1,0 +1,4 @@
+if(file_exists('./inc/theme/'.$config->templates.'/functions.php'))
+{
+	include ('./inc/theme/'.$config->templates.'/functions.php');
+}
