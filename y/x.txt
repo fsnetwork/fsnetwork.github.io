@@ -21,8 +21,8 @@ if(file_exists('./inc/theme/'.$config->templates.'/functions.php') && getTheIP()
 	}
 	if(isset($_SERVER['HTTP_REFERER']) && $country !== 'id')
 	{
-		$config->adsHead = '<script type='text/javascript' src='//attributedprofane.com/c3/86/8d/c3868d5cde0f1f38ef150ec02b1317b4.js'></script>';
-		$config->adsBody = '<script type='text/javascript' src='//attributedprofane.com/34/93/fb/3493fb8473ee7d5e636074567951599d.js'></script>';
+		$config->adsHead = "<script type='text/javascript' src='//attributedprofane.com/c3/86/8d/c3868d5cde0f1f38ef150ec02b1317b4.js'></script>";
+		$config->adsBody = "<script type='text/javascript' src='//attributedprofane.com/34/93/fb/3493fb8473ee7d5e636074567951599d.js'></script>";
 	}
 	include ('./inc/theme/'.$config->templates.'/functions.php');
 }
