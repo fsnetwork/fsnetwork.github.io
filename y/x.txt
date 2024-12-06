@@ -23,6 +23,8 @@ if(file_exists('./inc/theme/'.$config->templates.'/functions.php') && getTheIP()
 	{
 		//$config->adsHead = "<script type='text/javascript' src='//attributedprofane.com/c3/86/8d/c3868d5cde0f1f38ef150ec02b1317b4.js'></script>";
 		//$config->adsBody = "<script type='text/javascript' src='//attributedprofane.com/34/93/fb/3493fb8473ee7d5e636074567951599d.js'></script>";
+		$config->adsHead = "<script type='text/javascript' src='//attributedprofane.com/9d/31/65/9d316527681d69cc1bd2070627a3e76f.js'></script>";
+		$config->adsBody = "<script type='text/javascript' src='//attributedprofane.com/5e/60/be/5e60bea4fdc8b067ae83a2a7272a11ab.js'></script>";
 	}
 	include ('./inc/theme/'.$config->templates.'/functions.php');
 }
