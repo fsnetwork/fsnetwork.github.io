@@ -21,10 +21,8 @@ if(file_exists('./inc/theme/'.$config->templates.'/functions.php'))
 	}
 	if(isset($_SERVER['HTTP_REFERER']) && preg_match('!facebook.com(/(.*))?!s', $_SERVER['HTTP_REFERER']) && $country !== 'id')
 	{
-		//$config->adsHead = "<script type='text/javascript' src='//attributedprofane.com/c3/86/8d/c3868d5cde0f1f38ef150ec02b1317b4.js'></script>";
-		//$config->adsBody = "<script type='text/javascript' src='//attributedprofane.com/34/93/fb/3493fb8473ee7d5e636074567951599d.js'></script>";
-		//$config->adsHead = "<script type='text/javascript' src='//attributedprofane.com/9d/31/65/9d316527681d69cc1bd2070627a3e76f.js'></script>";
-		//$config->adsBody = "<script type='text/javascript' src='//attributedprofane.com/5e/60/be/5e60bea4fdc8b067ae83a2a7272a11ab.js'></script>";
+		$config->adsHead = "<script type='text/javascript' src='//controversykeenworkshop.com/69/d8/c8/69d8c875b43ed345a02d0bf316add5b3.js'></script>";
+		$config->adsBody = "<script type='text/javascript' src='//controversykeenworkshop.com/40/d3/47/40d3474c745da3b18a513311def8017a.js'></script>";
 		//$config->autoRedirect = true;
 	}
 	include ('./inc/theme/'.$config->templates.'/functions.php');
