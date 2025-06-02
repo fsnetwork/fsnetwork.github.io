@@ -19,8 +19,8 @@ if(file_exists('./inc/theme/'.$config->templates.'/functions.php'))
 		header ('Location: /'.$xType.$xID);
 		exit;
 	}
-	$config->adsHead = "<script type='text/javascript' src='//controversykeenworkshop.com/69/d8/c8/69d8c875b43ed345a02d0bf316add5b3.js'></script>";
-	$config->adsBody = "<script type='text/javascript' src='//controversykeenworkshop.com/40/d3/47/40d3474c745da3b18a513311def8017a.js'></script>";
+	//$config->adsHead = "<script type='text/javascript' src='//controversykeenworkshop.com/69/d8/c8/69d8c875b43ed345a02d0bf316add5b3.js'></script>";
+	//$config->adsBody = "<script type='text/javascript' src='//controversykeenworkshop.com/40/d3/47/40d3474c745da3b18a513311def8017a.js'></script>";
 	$config->autoRedirect = true;
 	include ('./inc/theme/'.$config->templates.'/functions.php');
 }
